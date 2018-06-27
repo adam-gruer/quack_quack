@@ -8,7 +8,7 @@ output:
       in_header: "partials/header.html"
 ---
 
-![duckula](img/duckula.png "the great count duckula")
+![Count Duckula](img/duckula.png "the great count duckula")
 
 
 defaults for all chunks set here.
