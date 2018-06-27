@@ -1,3 +1,6 @@
+created on windows 10 by navigating to the target folder and opening cmd.exe
+then using this command  tree /f /a > tree.txt
+
 your_project
 |   quack_quack.rmd
 |   
