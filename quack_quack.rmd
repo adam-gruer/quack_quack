@@ -15,7 +15,7 @@ defaults for all chunks set here.
 add css class of language_r to all source code chunks
 prism javascript and css library will use that class to do highlighting.
 
-```{r setup, include=FALSE}
+```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(eval = TRUE)
 knitr::opts_chunk$set(class.source = c("language-r"))
