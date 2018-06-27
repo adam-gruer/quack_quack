@@ -1,5 +1,5 @@
 # quack_quack
-![Count Duckula](img/duckula.ong "Picture of count duckula")
+![Count Duckula](img/duckula.png "Picture of count duckula")
 
 ## pseudo code with syntax highlighting from R Markdown and Prism.js
 
