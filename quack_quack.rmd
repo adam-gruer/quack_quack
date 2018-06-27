@@ -20,19 +20,44 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(eval = TRUE)
 knitr::opts_chunk$set(class.source = c("language-r"))
 ```
+Clone the repository https://github.com/adam-gruer/quack_quack.git
+
+The following folders and files are required in your project
+in order for quack_quack.rmd to knit to html correctly:
+
+
+ 
+    your_project
+    |   quack_quack.rmd
+    |   
+    +---partials
+    |       header.html
+    |       
+    +---scripts
+    |       prism.js
+    |       
+    \---themes
+            prism.css
+  
+        
 
 
 
 ### Example quack_quack code.
 
-chunks given the non-existent language __quack_quack__
+chunks given the non-existent language <code>quack_quack</code>
 r markdown complains and doesn't/can't run the code but **will** print the code
 block!
+
+When you have replaced the occurrences of <code class="language-r">
+<span class=".token.dataset">some_dataset</span></code> and <code class="language-r">
+<span class=".token.dataset">column_name</span></code>, your code will be ready to run, almost! Replace <code>{quack_quack}</code> with <code>{r}</code> and you are good to go.
+
 ```{quack_quack}
 library(ggplot2)
 
 some_dataset %>%  
-  ggplot(aes(x = quack_quack, y = quack_quack)) +
+  ggplot(aes(x = column_name, y = column_name)) +
   geom_point() # Adds a scatterplot.
 
 ```

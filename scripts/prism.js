@@ -576,7 +576,7 @@ Prism.languages.r = {
 		/\b(?:NaN|Inf)\b/,
 		/(?:\b0x[\dA-Fa-f]+(?:\.\d*)?|\b\d+\.?\d*|\B\.\d+)(?:[EePp][+-]?\d+)?[iL]?/
 	],
-	'quack_quack': /\b(?:quack_quack)\b/,
+	'quack_quack': /\b(?:quack_quack|column_name)\b/,
 	'dataset': /\b\S*_dataset\b/,
 	'keyword': /\b(?:if|else|repeat|while|function|for|in|next|break|NULL|NA|NA_integer_|NA_real_|NA_complex_|NA_character_)\b/,
 	'operator': /->?>?|<(?:=|<?-)?|[>=!]=?|::?|&&?|\|\|?|[+*\/^$@~]/,

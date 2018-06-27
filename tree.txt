@@ -1,0 +1,12 @@
+your_project
+|   quack_quack.rmd
+|   
++---partials
+|       header.html
+|       
++---scripts
+|       prism.js
+|       
+\---themes
+        prism.css
+        
