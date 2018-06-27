@@ -1,0 +1,61 @@
+---
+title: "Quack Quack"
+author: "Count Duckula"
+date: "27 June 2018"
+output:
+  html_document:
+    includes:
+      in_header: "partials/header.html"
+---
+
+![duckula](img/duckula.png "the great count duckula")
+
+
+defaults for all chunks set here.
+add css class of language_r to all source code chunks
+prism javascript and css library will use that class to do highlighting.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(eval = TRUE)
+knitr::opts_chunk$set(class.source = c("language-r"))
+```
+
+
+
+### Example quack_quack code.
+
+chunks given the non-existent language __quack_quack__
+r markdown complains and doesn't/can't run the code but **will** print the code
+block!
+```{quack_quack}
+library(ggplot2)
+
+some_dataset %>%  
+  ggplot(aes(x = quack_quack, y = quack_quack)) +
+  geom_point() # Adds a scatterplot.
+
+```
+
+
+
+### Example non quack_quack code
+
+```{r }
+library(ggplot2)
+library(magrittr)
+
+boot::ducks %>%  
+  ggplot(aes(x = plumage, y = behaviour)) +
+  geom_point(aes(colour = plumage), size = 7, alpha = 0.7) + # Adds a scatterplot.
+  geom_smooth( colour = "#005c47",method = "lm", se = FALSE) + #adds regression line
+  labs(title = "If it looks like a duck",
+     subtitle = "Behavioral and Plumage Characteristics of Hybrid Ducks",
+     x = "Looks like: Mallard <-> Pintail",
+     y = "Acts like: Mallard <-> Pintail")+
+  theme_minimal() +
+  scale_color_continuous(low = "#005c47", high = "#5f4433", guide = "none")
+
+```
+
+
