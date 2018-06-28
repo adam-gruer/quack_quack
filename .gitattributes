@@ -1,0 +1,6 @@
+R/* linguist-detectable
+inst/* linguist-vendored
+DESCRIPTION linguist-vendored
+NAMESPACE linguist-vendored
+*.*md linguist-vendored
+man/* linguist-vendored
