@@ -26,19 +26,21 @@ The following folders and files are required in your project
 in order for quack_quack.rmd to knit to html correctly:
 
 
+  <pre>
  
-    your_project
-    |   quack_quack.rmd
-    |   
-    +---partials
-    |       header.html
-    |       
-    +---scripts
-    |       prism.js
-    |       
-    \---themes
-            prism.css
-  
+your_project
+|   quack_quack.rmd
+|   
++---partials
+|       header.html
+|       
++---scripts
+|       prism.js
+|       
+\---themes
+        prism.css
+   </pre>
+
         
 
 
