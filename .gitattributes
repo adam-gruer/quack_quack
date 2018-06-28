@@ -5,3 +5,4 @@ NAMESPACE linguist-vendored
 *.*md linguist-vendored
 man/* linguist-vendored
 *.html linguist-vendored
+*.R* linguist-detectable
