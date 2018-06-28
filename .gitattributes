@@ -6,3 +6,6 @@ NAMESPACE linguist-vendored
 man/* linguist-vendored
 *.html linguist-vendored
 *.R* linguist-detectable
+img/* linguist-vendored
+themes/* linguist-vendored
+scripts/* linguist-vendored
